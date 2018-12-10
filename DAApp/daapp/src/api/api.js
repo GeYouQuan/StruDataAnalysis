@@ -1,3 +1,3 @@
 export const api = {
-  UploadURL="",
+  UploadURL:"https://localhost:5001/api/Upload",
 };
