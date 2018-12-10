@@ -2,28 +2,49 @@
   <uploader :options="options" class="uploader-example">
     <uploader-unsupport></uploader-unsupport>
     <uploader-drop>
-      <p>Drop files here to upload or</p>
-      <uploader-btn>select files</uploader-btn>
-      <uploader-btn :attrs="attrs">select images</uploader-btn>
-      <uploader-btn :directory="true">select folder</uploader-btn>
+      <p>拖动文件到此上传</p>
+      <uploader-btn>上传(批量)</uploader-btn>
+      <uploader-btn :attrs="attrs">上传</uploader-btn>
+      <uploader-btn :directory="true">上传文件夹</uploader-btn>
     </uploader-drop>
     <uploader-list></uploader-list>
   </uploader>
 </template>
 
 <script>
+import {ACCEPT_CONFIG} from '../config/config.js'
+import {api} from '../../api/api.js'
   export default {
     data () {
       return {
         options: {
-          // 可通过 https://github.com/simple-uploader/Uploader/tree/develop/samples/Node.js 示例启动服务
-          target: '//localhost:3000/upload',
+          target: api.UploadURL, // '//jsonplaceholder.typicode.com/posts/',
           testChunks: false
         },
         attrs: {
-          accept: 'image/*'
+          accept: ACCEPT_CONFIG.getDatas()
+        },
+        statusText: {
+          success: '成功了',
+          error: '出错了',
+          uploading: '上传中',
+          paused: '暂停中',
+          waiting: '等待中'
         }
       }
+    },
+    methods: {
+      complete () {
+        console.log('complete', arguments)
+      },
+      fileComplete () {
+        console.log('file complete', arguments)
+      }
+    },
+    mounted () {
+      this.$nextTick(() => {
+        window.uploader = this.$refs.uploader.uploader
+      })
     }
   }
 </script>

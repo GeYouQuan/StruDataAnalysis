@@ -72,7 +72,7 @@ module.exports = {
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
-    },
+    },// 路径别名
     extensions: ['*', '.js', '.vue', '.json']
   },
   devServer: {

@@ -1,0 +1,13 @@
+F:\Project\DataAnalysis\StruDataAnalysis\DataAnalysisApi\obj\Debug\netcoreapp2.1\DataAnalysisApi.csproj.CoreCompileInputs.cache
+F:\Project\DataAnalysis\StruDataAnalysis\DataAnalysisApi\obj\Debug\netcoreapp2.1\DataAnalysisApi.RazorAssemblyInfo.cache
+F:\Project\DataAnalysis\StruDataAnalysis\DataAnalysisApi\obj\Debug\netcoreapp2.1\DataAnalysisApi.RazorAssemblyInfo.cs
+F:\Project\DataAnalysis\StruDataAnalysis\DataAnalysisApi\obj\Debug\netcoreapp2.1\DataAnalysisApi.AssemblyInfoInputs.cache
+F:\Project\DataAnalysis\StruDataAnalysis\DataAnalysisApi\obj\Debug\netcoreapp2.1\DataAnalysisApi.AssemblyInfo.cs
+F:\Project\DataAnalysis\StruDataAnalysis\DataAnalysisApi\bin\Debug\netcoreapp2.1\DataAnalysisApi.deps.json
+F:\Project\DataAnalysis\StruDataAnalysis\DataAnalysisApi\bin\Debug\netcoreapp2.1\DataAnalysisApi.runtimeconfig.json
+F:\Project\DataAnalysis\StruDataAnalysis\DataAnalysisApi\bin\Debug\netcoreapp2.1\DataAnalysisApi.runtimeconfig.dev.json
+F:\Project\DataAnalysis\StruDataAnalysis\DataAnalysisApi\bin\Debug\netcoreapp2.1\DataAnalysisApi.dll
+F:\Project\DataAnalysis\StruDataAnalysis\DataAnalysisApi\obj\Debug\netcoreapp2.1\DataAnalysisApi.RazorTargetAssemblyInfo.cache
+F:\Project\DataAnalysis\StruDataAnalysis\DataAnalysisApi\bin\Debug\netcoreapp2.1\DataAnalysisApi.pdb
+F:\Project\DataAnalysis\StruDataAnalysis\DataAnalysisApi\obj\Debug\netcoreapp2.1\DataAnalysisApi.dll
+F:\Project\DataAnalysis\StruDataAnalysis\DataAnalysisApi\obj\Debug\netcoreapp2.1\DataAnalysisApi.pdb
