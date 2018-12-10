@@ -40,6 +40,8 @@ namespace DataAnalysisApi.Common
             if (this.file == null)
                 throw new ArgumentNullException("没有需要保存的文件");
 
+            destinationDir = System.IO.Path.Combine(Directory.GetCurrentDirectory(), destinationDir);
+
             if (destinationDir != null)
                 Directory.CreateDirectory(destinationDir);
 
