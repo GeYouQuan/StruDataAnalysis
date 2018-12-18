@@ -86,7 +86,7 @@ Content-Disposition: form-data; name="chunkNumber"
 
                     this.FileType = this.file.ContentType;
                     this.Length = this.file.Length;
-                    this.Extension = this.file.FileName.Substring(file.FileName.LastIndexOf('.'));
+                    this.Extension =System.IO.Path.GetExtension(  this.file.FileName);
                     //
                     //
                     if (string.IsNullOrEmpty(this.FileName))
