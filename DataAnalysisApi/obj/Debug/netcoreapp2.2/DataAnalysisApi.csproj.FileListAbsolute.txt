@@ -11,4 +11,3 @@ F:\Project\DataAnalysis\StruDataAnalysis\DataAnalysisApi\obj\Debug\netcoreapp2.2
 F:\Project\DataAnalysis\StruDataAnalysis\DataAnalysisApi\obj\Debug\netcoreapp2.2\DataAnalysisApi.RazorTargetAssemblyInfo.cache
 F:\Project\DataAnalysis\StruDataAnalysis\DataAnalysisApi\obj\Debug\netcoreapp2.2\DataAnalysisApi.dll
 F:\Project\DataAnalysis\StruDataAnalysis\DataAnalysisApi\obj\Debug\netcoreapp2.2\DataAnalysisApi.pdb
-F:\Project\DataAnalysis\StruDataAnalysis\DataAnalysisApi\obj\Debug\netcoreapp2.2\DataAnalysisApi.csprojAssemblyReference.cache

@@ -15,53 +15,13 @@ namespace DataAnalysisApi.Controllers
     {
         [HttpPost]
         public async Task<IActionResult> Post([FromFile]UserFile file)
-        {
-            /*
-             ------WebKitFormBoundaryO9RDf5D3InulEfkO
-Content-Disposition: form-data; name="chunkNumber"
-
-155
-------WebKitFormBoundaryO9RDf5D3InulEfkO
-Content-Disposition: form-data; name="chunkSize"
-
-1048576
-------WebKitFormBoundaryO9RDf5D3InulEfkO
-Content-Disposition: form-data; name="currentChunkSize"
-
-1048576
-------WebKitFormBoundaryO9RDf5D3InulEfkO
-Content-Disposition: form-data; name="totalSize"
-
-356755976
-------WebKitFormBoundaryO9RDf5D3InulEfkO
-Content-Disposition: form-data; name="identifier"
-
-356755976-windows-x64_FineBI4_1-CNexe
-------WebKitFormBoundaryO9RDf5D3InulEfkO
-Content-Disposition: form-data; name="filename"
-
-windows-x64_FineBI4_1-CN.exe
-------WebKitFormBoundaryO9RDf5D3InulEfkO
-Content-Disposition: form-data; name="relativePath"
-
-windows-x64_FineBI4_1-CN.exe
-------WebKitFormBoundaryO9RDf5D3InulEfkO
-Content-Disposition: form-data; name="totalChunks"
-
-340
-------WebKitFormBoundaryO9RDf5D3InulEfkO
-Content-Disposition: form-data; name="file"; filename="windows-x64_FineBI4_1-CN.exe"
-Content-Type: application/x-msdownload
-
-
-------WebKitFormBoundaryO9RDf5D3InulEfkO--
-             */
-            if (file == null || !file.IsValid)
-                return new JsonResult(new { code = 500, message = "不允许上传的文件类型" });
+        { 
+            //if (file == null || !file.IsValid)
+            //    return new JsonResult(new { code = 500, message = "不允许上传的文件类型" });
 
             string newFile = string.Empty;
             if (file != null)
-                newFile = await file.SaveAs("images");
+                newFile = await file.SaveAsChunks("images");
 
             return new JsonResult(new {
                 code = 0,
